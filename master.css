@@ -1,11 +1,15 @@
-/* .espejo  {
+.container {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-} */
+  flex-flow: column;
+}
 
-/* #espejoV {
-  /* position: fixed; */
-  /* width: 100vw;
-  height: 100vh;
-} */ 
+.header {
+  display: flex;
+}
+
+#espejoV {
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 100vw;
+  height: 10vh;
+}
