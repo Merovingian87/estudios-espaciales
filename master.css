@@ -214,7 +214,7 @@ nav ul li {
   display: flex;
   padding: 5vw;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .proyecto h2 {
@@ -228,11 +228,19 @@ nav ul li {
   max-width: 90vw;
 }
 
+.proyecto p {
+  padding-top: 10px;
+  font-size: 2vh;
+  font-family: 'Red Hat Text', sans-serif;
+  color: black;
+}
+
 .sidebar {
   display: none;
 }
 
 footer {
+  background-color: black;
   height: 10vh;
   display: flex;
   flex-direction: row;
@@ -240,12 +248,7 @@ footer {
 }
 
 footer h3 {
-  padding: 2vh;
-  font-size: 2vh;
-  font-family: arial;
-}
-
-footer h3 {
+  color: white;
   padding: 2vh;
   font-size: 2vh;
   font-family: arial;
