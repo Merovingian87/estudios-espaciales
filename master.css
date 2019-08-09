@@ -182,7 +182,7 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 2vh;
+  font-size: 4vw;
   font-family: 'Red Hat Text', sans-serif;
   padding: 0 20px;
   color: black;
@@ -198,6 +198,7 @@ nav ul li {
 }
 
 .main p {
+  font-size: 4vw;
   font-family: 'Red Hat Text', sans-serif;
   padding: 20px 15px;
   line-height: normal;
@@ -219,6 +220,7 @@ nav ul li {
 
 .proyecto h2 {
   padding-top: 10px;
+  padding-bottom: 2vh;
   font-size: 3vh;
   font-family: 'Red Hat Text', sans-serif;
   color: black;
@@ -249,7 +251,77 @@ footer {
 
 footer h3 {
   color: white;
-  padding: 2vh;
+  padding: 3vh;
   font-size: 2vh;
   font-family: arial;
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify: center;
+    }
+
+    .main img {
+      padding-left: 15vw;
+      max-width: 70vw;
+      max-height: 50vh;
+      padding-bottom: 2vh;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+  #espejoI {
+    display: inline;
+    width: 100%;
+    max-height: 70vh;
+  }
+  #espejoV {
+  display: none;
+  }
+    .nav {
+      display: none;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .sidebar {
+      flex-basis: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: white;
+      width: 30vw;
+      text-decoration: none;
+    }
+
+    #globoSide {
+      padding: 0;
+      margin: 0;
+      max-width:100%;
+      max-height:100%;
+    }
+
+    .sidebar h3 {
+      font-family: 'Red Hat Text', sans-serif;
+      padding: 4vh 2vw;
+      font-size: 5vw;
+    }
+    .sidebar h3 a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .main {
+      background-color: #FFDEDA;
+      flex-basis: 80%;
+      display: flex;
+      flex-direction: column;
+      width: 30vw;
+    }
+
 }
